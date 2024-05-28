@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VUTHASHOP</title>
+    <link rel="icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCB7gvwK6FKs-Vf4mbyRK1c6dCV96Ne4I5SiNdWZ1vx1sk1RLpELJFILKwv3iQTbrpxxE&usqp=CAU">
+    <!-- Sweet ALert -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+    <!-- link boost -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <!-- Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Link css -->
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js" integrity="sha512-Eak/29OTpb36LLo2r47IpVzPBLXnAMPAVypbSZiZ4Qkf8p/7S/XRG5xp7OKWPPYfJT6metI+IORkR5G8F900+g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- JQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+
+</head>
+<body>
+<!-- Load First -->
+    <div class="loader-container">
+        <img src="https://static.wixstatic.com/media/b08816_028a1254cf0e4e8282c6edcc4d98e916~mv2.gif" width="800px" alt="">
+        <div class="text-center">
+            <div class="spinner-border" role="status" style="position: relative;right: 25rem;top: 17rem;">
+              <span class="visually-hidden">Loading...</span>
+            </div>
+        </div>
+    </div>
+            <script src="https://unpkg.com/scrollreveal"></script>
+<!-- End of Load -->
+<!--Navbar-Top -->
+    <div class="container-fluid bg-black navtop" >
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 Menu bg-black" >
+                    <ul>
+                        <li >
+                            <a href="#"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCB7gvwK6FKs-Vf4mbyRK1c6dCV96Ne4I5SiNdWZ1vx1sk1RLpELJFILKwv3iQTbrpxxE&usqp=CAU" alt="" style="width:80px;height: 80px;object-fit: cover;border-radius: 50%;"></a>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li class="search">
+                            <input type="text" placeholder="search product...." id="search">
+                            <div class="btn_search">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                            </div>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li class="nav" style="text-decoration: underline;color: white">
+                            <a href="#"><i class="fa-solid fa-house"></i> Home</a>
+                        </li>
+                        <li class="nav">
+                            <a href="./about_me.html">About Me</a>
+                        </li>
+                        <li class="nav">
+                            <a href="/login.html">Login</a>
+                        </li>
+                        <li class="nav">
+                            <a href="./contact.html">Contact</a>
+                        </li>
+                        <li class="nav">
+                            <a href="#">Other</a>    
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fa-solid fa-cart-shopping" id="cart"></i>
+                                <div class="count">0</div>
+                            </a>
+                        </li>
+
+                        <li id="bar">
+                            <a href="#"><i class="fa-solid fa-bars"></i></a>
+                        </li>
+                        <li>
+                            <!-- Dark mode -->
+                            <div class="mode"> 
+                                <span class="change"><i class="fa-regular fa-moon"></i></span>
+                            </div>
+                            <!-- End of dark mode -->
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+        </div>
+    </div> 
+<!-- End of Nav-Bar Top -->
+<!-- Second page -->
+<!-- <div class="container-fluid page2">
+    <div class="row page2-row">
+        <div class="col-xl-7 col-lg-7 col-md-6 col-sm-12 col-12 left2 mt-5">
+            <h1>Thany&</h1> 
+            <span>
+                <h1 class="first">Never</h1>
+                <h1 class="second">Smoke</h1>
+            </span>
+            <span class="des">Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+                Sit tenetur dignissimos commodi fugiat tempora quam provident?
+                 Eaque fuga rerum ullam! Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            </span>
+            <button class="btn btn-primary" style="width: 6rem;" id="sign_in">Sign In</button>
+        </div>
+
+        <div class="col-xl-5 lg-5 col-md-6  col-sm-12 col-12 right2">
+            <form action="action_page.php" method="post" class="form">
+                <div class="imgcontainer">
+                  <img src="https://cdn-icons-png.flaticon.com/512/149/149071.png" alt="Avatar" class="avatar">
+                </div>
+              
+                <div class="container">
+                  <label for="uname" class="form-label">Username</label>
+                  <input type="text"  class="form-control " placeholder="Enter Username" name="uname" required>
+              
+                  <label for="psw" class="form-label">Password</label>
+                  <input type="password" class="form-control" placeholder="Enter Password" name="psw" required>
+              
+                  <button type="submit" class="mt-5 login">Login</button>
+                  <label>
+                </div>
+                <div class="close"><i class="fa-solid fa-xmark"></i></div>
+              </form>
+        </div>
+    </div>
+</div> -->
+<!-- End of Second Page -->
+
+
+<!-- Menu Bar -->
+    <div class="side" id="side_bar">
+        <ul>
+            <li>
+                <a href="#"><i class="fa-solid fa-house"></i> Home</a>
+            </li>
+            <li>
+                <a href="./about_me.html">About Me</a>
+            </li>
+            <li>
+                <a href="#">Login</a>
+            </li>
+            <li>
+                <a href="#">Other</a>
+            </li>
+        </ul>
+        <div class="close_side" id="close_side">
+            <i class="fa-solid fa-xmark"></i>
+        </div>
+    </div>
+<!-- End of Menu Bar -->
+
+<!-- Slid & ads -->
+    <div class="container" style="position: relative;top: 145px;">
+        <div class="row g-2 mt-3">
+            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12 Slid_item">
+                <div id="carouselExampleRide" class="carousel slide" data-bs-ride="true">
+                    <div class="carousel-inner">
+                            <div class="carousel-item active" style="height: 350px;">
+                                <img src="https://www.ababank.com/fileadmin/user_upload/Landing_Page/ABA_ID/ABA_QR/aba_qr_scan_lp_en.jpg" class="d-block w-100"  alt=""  style="width: 100%; height: 100%; object-fit: cover;">
+                            </div>
+                            <div class="carousel-item" style="height: 350px;">
+                                <img src="https://e0.pxfuel.com/wallpapers/265/791/desktop-wallpaper-sports-car-ferrari-488-gtb-red-ferrari-ultra.jpg" class="d-block w-100" alt=""  style="width: 100%; height: 100%; object-fit: cover;">
+                            </div>
+                            <div class="carousel-item" style="height: 350px;">
+                                <img src="https://c4.wallpaperflare.com/wallpaper/852/146/553/car-red-vehicle-ferrari-488-gtb-wallpaper-preview.jpg" class="d-block w-100" alt="" style="width: 100%; height: 100%; object-fit: cover;">
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleRide" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleRide" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                    </div>
+                  </div>
+            </div>
+            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
+                <iframe width="100%" height="350" src="https://www.youtube.com/embed/BNVhy6RhbpU?si=Qlv0p5oUAI7mstHX" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+<!-- End of slid & ads -->
+        </div>
+        <div class="row" id="store">
+            <!-- <div class="col-xl-3 col-lg-3 col-md-3 col-sm-6 col-12 item-box g-3 ">
+                <div class="box">
+                    <div class="box-img">
+                        <img src="/img/Angkor4k1.jpg" alt="">
+                    </div>
+                    <div class="box-title">
+                        <h1>Coffee</h1>
+                        <p style="color: gold;">
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione, maxime?</p>
+                        <button class="btn btn-success text-light btn-outline-primary">Add Product</button>
+                    </div>
+                </div>
+            </div> -->
+        </div>
+        <div class="row mt-3 g-5">
+            <div class="col-xl-6 col-sm-6 col-12" style="overflow: hidden;">
+                <img src="https://falstaff.b-cdn.net/storage/2022/07/corona-beer.jpeg" alt="" style="width: 100%;object-fit: cover;height: 300px;">
+            </div>
+            <div class="col-xl-6 col-sm-6 col-12" style="overflow: hidden;">
+                <img src="https://admin.livingliquidz.com/Content/wp-content/uploads/2022/5/final-Home-Page-Banner-Creative0120220506811.jpg" alt="" style="width: 100%;object-fit: cover;">
+                            
+                <!-- Pre & next -->
+                <div class="mt-5">
+                <a href="#" class="previous">&laquo; Previous</a>
+                <a href="#" class="next">Next &raquo;</a>
+
+                <a href="#" class="previous round">&#8249;</a>
+                <a href="#" class="next round">&#8250;</a>
+                </div>
+
+            </div>
+        </div>
+<!-- Table When u buy -->
+        <div class="table-box">
+            <table class="table table-dark table-striped table-hover align-middle">
+                <thead>
+                    <tr>
+                        <th>Profile</th>
+                        <th>Name</th>
+                        <th colspan="2">Action</th>
+                    </tr>
+                </thead>
+                <tbody id="tbl-data">
+                        <!-- ...... -->
+                </tbody>
+            </table>
+            <div class="xmark"><i class="fa-solid fa-xmark"></i></div>
+        </div>
+<!--End of Table When u buy -->
+    </div>
+<!-- End of content -->
+
+<!-- Footer -->
+    <div class="container-fluid bg-black" style="margin-top: 190px;">
+        <div class="container bg-black">
+            <div class="row">
+                <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12 foot">
+                    <ul>
+                        <li>
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCB7gvwK6FKs-Vf4mbyRK1c6dCV96Ne4I5SiNdWZ1vx1sk1RLpELJFILKwv3iQTbrpxxE&usqp=CAU" alt="" style="width:50px;height: 50px;object-fit: cover;border-radius: 50%;" class="m-2">
+                            <p>​© រក្សា​សិទ្ធិ​គ្រប់​យ៉ាង​ដោយ​ អ៊ន​ វុដ្ឋា </p>
+                            <span>គោលការណ៍​ភាព​ឯកជន | Privacy Policy  សង្កាត់ផ្សារដើមថ្កូវ​ ខណ្ឌចម្កាមន</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12 foot mt-5">
+                    <ul>
+                        <li>
+                            <a href="#"><h5 class="mt-2">About Us</h5></a>
+                            <p>VUTHA BRAND ជា​ Website លក់ភេសជ្ជៈឈាន​មុខ​គេ​នៅ​កម្ពុជា។ សេវាកម្មរហ័ស​ ទំនុកចិត្តខ្ពស់។<a href="#">See more...</p></a> 
+                            <!-- <nav style="margin-left:0px;">
+                                <div class="info">
+                                    <i class="fa-brands fa-facebook " id="facebook" style="float: left;"></i>
+                                    <p style="float: left; margin-left: 10px;margin-top: -5px;">Thany Oun</p>
+                                </div>
+                            </nav> -->
+                        </li>
+                    </ul>
+                </div> 
+                <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12 foot mt-5">
+                    <ul>
+                        <h5 style="color: white;">Contact Us :</h5>
+                        <li>
+                            <!-- <a href="#" class="d-flex" ><i class="fa-solid fa-phone" style="padding: 0px 5px;margin-top: 3px;"></i><p>(+855)15 869 363 /</p><p> 071 6235 881</p></a> -->
+                            <a href="#"><i class="fa-solid fa-phone"></i>(+855)68 433 469</a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa-solid fa-envelope"></i> Gmail: ornvutha04@gmail.com</a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa-brands fa-facebook"></i> Orn Vutha</i></a>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+        </div>
+    </div>
+<!-- End of Footer -->
+<script>    
+// Creat Dark Mode Animation
+    $(".change").on("click", function () {
+        if ($("body").hasClass("dark")) {
+          $("body").removeClass("dark");
+        //   $(".change").text("Dark"); 
+          $(".change").html('<i class="fa-regular fa-moon"></i>');
+
+        } else {
+          $("body").addClass("dark");
+        //   $(".change").text("Light");
+          $(".change").html('<i class="fa-regular fa-lightbulb"></i>');
+        }
+      });
+//End  Creat Dark Mode Animation
+</script>
+
+</body>
+</html>
+<script src="./app.js">
+    const sr = ScrollReveal({
+        origin: 'top',
+        distance: '70px',
+        duration: 1000,
+        delay: 200
+    });
+    sr.reveal('.hero-text', { origin: 'left', interval:300 });
+    sr.reveal('.hero-img', { interval: 300 });
+    sr.reveal('.box', { interval: 300 });
+</script>
+<!-- Animation when scroll -->
+<script>
+    window.addEventListener('scroll', function() {
+  var elements = document.querySelectorAll('.row.g-2 > .col-xl-6, .row.g-2 > .col-xl-6> iframe');
+  var scrolled = window.scrollY;
+  
+  elements.forEach(function(element) {
+    var elementTop = element.getBoundingClientRect().top;
+    var elementHeight = element.offsetHeight;
+    
+    if (elementTop < (scrolled + window.innerHeight - elementHeight / 2)) {
+      element.style.opacity = 1;
+    }
+  });
+});
+
+</script>
+<!--End Animation when scroll -->

@@ -1,0 +1,488 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  height: 200vh;
+  font-family: "koulen";
+}
+.navtop {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 9999;
+}
+.Menu {
+  display: flex;
+  justify-content: space-around;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+.Menu ul {
+  display: flex;
+  list-style-type: none;
+  justify-content: center;
+  align-items: center;
+}
+.Menu ul li a {
+  display: block;
+  font-size: 22px;
+  color: white;
+  text-decoration: none;
+  padding: 15px;
+  position: relative;
+}
+.Menu ul li a:hover {
+  text-decoration: underline;
+}
+.Menu ul li a:hover::before {
+  content: " ";
+  background-color: red;
+}
+.Menu ul li a:hover::after {
+  content: " ";
+  border-radius: 3px;
+  transition: 1s;
+}
+.Menu ul .search {
+  width: 500px;
+  display: flex;
+  color: white;
+  overflow: hidden;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.Menu ul .search input {
+  width: 50%;
+  outline: none;
+  background: none;
+  border: none;
+  background-color: white;
+  padding: 5px;
+}
+.btn_search {
+  width: 10%;
+  background-color: rgb(37, 156, 87);
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+.count {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 20px;
+  height: 20px;
+  background-color: red;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+}
+
+.item-box {
+  padding: 2px;
+}
+.item-box .box {
+  width: 100%;
+  height: 400px;
+  box-shadow: 1px 1px 5px 0px black;
+}
+.box .box-img {
+  width: 100%;
+  height: 60%;
+  overflow: hidden;
+}
+.box .box-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.box .box-title {
+  width: 100%;
+  height: 40%;
+}
+.box .box-title h1 {
+  text-align: center;
+  font-size: 22px;
+}
+.box .box-title p {
+  text-align: center;
+}
+.box .box-title button {
+  margin-left: 100px;
+}
+.table-box {
+  display: none;
+  width: 300px;
+  height: 300px;
+  /* background-color:blue; */
+  position: absolute;
+  right: 20px;
+  top: -30px;
+}
+.xmark {
+  position: absolute;
+  right: 5px;
+  top: 4px;
+  color: white;
+}
+/*  */
+.fa-star:hover {
+  color: red;
+}
+/* footer */
+.foot {
+  padding: 20px;
+}
+.foot ul {
+  list-style-type: none;
+}
+.foot ul li p,
+span {
+  color: rgba(255, 255, 255, 0.725);
+  cursor: pointer;
+}
+.foot a {
+  display: block;
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+}
+.foot ul li nav {
+  font-size: 22px;
+  /* float: left; */
+  color: rgba(255, 255, 255, 0.863);
+}
+.side {
+  display: none;
+  width: 250px;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.782);
+  position: relative;
+  position: fixed;
+  z-index: 1;
+  top: 125px;
+}
+.side ul {
+  width: 100%;
+  list-style-type: none;
+}
+.side ul li a {
+  display: block;
+  padding: 20px 0px;
+  font-size: 22px;
+  color: white;
+  text-decoration: none;
+}
+.side ul li:hover a {
+  color: red;
+  text-decoration: underline;
+}
+.side .close_side {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  font-size: 22px;
+  color: white;
+}
+/* Img:hover {
+  transform: scale(1.069);
+  overflow: hidden;
+  transition: 1s;
+} */
+/*  */
+.box-img {
+  position: relative;
+  border: 1px solid black;
+  background-image: url("http://placekitten.com/g/300/300");
+  background-size: cover;
+  background-position: center;
+}
+.box-img::after {
+  content: "";
+  display: block;
+  position: absolute;
+  height: 0%;
+  width: 100%;
+  bottom: 0;
+  transition: height 0.5s ease-in-out;
+  background: linear-gradient(
+    to bottom,
+    transparent 0%,
+    rgba(0, 0, 0, 0.805) 100%
+  );
+}
+.box-img:hover::after {
+  height: 100%;
+}
+/*  */
+.add_pro:hover {
+  background-color: darkblue;
+}
+/*  */
+.loader-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10000;
+  background: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+}
+.loader-container.fade-out {
+  top: 120%;
+}
+/* Mode */
+
+/* End Mode */
+/* Pre &Next */
+a {
+  text-decoration: none;
+  display: inline-block;
+  padding: 8px 16px;
+}
+
+.previous {
+  background-color: #f1f1f1;
+  color: black;
+}
+
+.next {
+  background-color: #04aa6d;
+  color: white;
+}
+
+.round {
+  border-radius: 50%;
+}
+/* End Pre */
+
+/*  */
+/* Extra larg */
+@media (min-width: 1200px) {
+  #bar {
+    display: none;
+  }
+  .add_pro {
+    position: relative;
+    left: 10px;
+  }
+  .form {
+    width: 60%;
+  }
+  .close {
+    display: none;
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1200px) {
+  #bar {
+    display: none;
+  }
+  .form {
+    width: 60%;
+  }
+  .close {
+    display: none;
+  }
+}
+/* Medium device */
+@media (min-width: 844px) and (max-width: 992px) {
+  .Menu ul .search {
+    display: none;
+  }
+  .add_pro {
+    position: relative;
+    left: 2px;
+  }
+  #bar {
+    display: none;
+  }
+}
+/*small device*/
+@media (min-width: 390px) and (max-width: 844px) {
+  .Menu ul .search {
+    display: none;
+  }
+  .Menu ul .nav {
+    display: none;
+  }
+  .add_pro {
+    position: relative;
+    left: 40px;
+  }
+  #bar {
+    display: block;
+  }
+  .right2 {
+    display: none;
+  }
+}
+
+/*Extra small device  */
+/* Samsung S20 */
+@media (max-width: 390px) {
+  .Menu ul .search {
+    display: none;
+  }
+  .add_pro {
+    position: relative;
+    left: 22px;
+  }
+  .Menu .nav {
+    display: none;
+  }
+}
+/* Iphone13MAX */
+@media (width: 428px) {
+  .Menu ul .search {
+    display: none;
+  }
+  .add_pro {
+    position: relative;
+    left: 3.5rem;
+  }
+  .Menu .nav {
+    display: none;
+  }
+}
+
+@media (min-width: 767px) and (max-width: 1081px) {
+  .right2 {
+    display: block;
+  }
+}
+
+.change {
+  cursor: pointer;
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  padding: 5px;
+  font-size: 20px;
+  margin-left: 10px;
+  border: 1px dotted white;
+  font-size: 29px;
+  overflow: hidden;
+  border-radius: 5px;
+}
+.dark {
+  background-color: #000000e4;
+  color: #e6e6e6;
+}
+/* End dark mode */
+
+/* Second Page
+.page2 {
+  width: 100%;
+  display: block;
+  height: 100vh;
+  padding: 0;
+  margin: 0;
+  background-image: linear-gradient(
+    to left,
+    rgb(213, 73, 213),
+    rgb(123, 50, 218)
+  );
+  padding: 40px;
+}
+.page2 > .page2-row > img {
+  width: 100%;
+  height: 720px;
+  object-fit: cover;
+}
+.page2 > .page2-row {
+  position: relative;
+  top: 8rem;
+}
+.page2 > .page2-row > .left2 > h1 {
+  color: white;
+  font-size: 50px;
+  font-weight: 700;
+}
+.page2 > .page2-row > .left2 > span > .first {
+  color: red;
+  font-size: 50px;
+  font-weight: 700;
+}
+.page2 > .page2-row > .left2 > span > .second {
+  color: white;
+  font-size: 50px;
+  font-weight: 700;
+}
+.page2 > .page2-row > .left2 > .des {
+  color: white;
+  font-size: 22px;
+  font-weight: 300;
+}
+/* ENd of Second Page */
+
+/* Bordered form */
+form {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.507);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 10px;
+  border-radius: 15px;
+}
+form > .close {
+  position: absolute;
+  top: 0.5rem;
+  right: 1rem;
+  color: white;
+}
+.page2 > .page2-row > .right2 > form > .container > label {
+  color: white;
+}
+.page2 > .page2-row > .right2 {
+  position: absolute;
+  right: 0;
+}
+/* Set a style for all buttons */
+.login {
+  background-color: #04aa6d;
+  color: white;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+/* Add a hover effect for buttons */
+button:hover {
+  opacity: 0.8;
+}
+/* Center the avatar image inside this container */
+.imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+}
+
+/* Avatar image */
+img.avatar {
+  width: 30%;
+  border-radius: 50%;
+}
+
+/* Add padding to containers */
+.container {
+  padding: 16px;
+}
+.row.g-2 > .col-xl-6,
+.row.g-2 > .col-xl-6 > iframe {
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
